@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SemesterProject.Login"
+             Title="Login">
+    <StackLayout Padding="10 " BackgroundColor="DimGrey" HeightRequest="650" WidthRequest="600">
+
+        <Label BackgroundColor="CornflowerBlue" WidthRequest="600" HeightRequest="5"/>
+        <Label
+                Text="Welcome To Work"
+                FontSize="Header"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                TextColor="CornflowerBlue"
+                FontAttributes="Bold, Italic"
+            />
+        <Label BackgroundColor="CornflowerBlue" WidthRequest="600" HeightRequest="5"/>
+        <Label BackgroundColor="DimGrey" WidthRequest="600" HeightRequest="25"/>
+
+        <Label
+            Text="Case Sensitive Log-In "
+            FontSize="20"
+            TextColor="WhiteSmoke"
+            HorizontalTextAlignment="Center"
+            FontAttributes="Bold, Italic"
+        />
+        <Label BackgroundColor="DimGrey" WidthRequest="600" HeightRequest="25"/>
+
+
+        <Label Margin="10"
+                Text="              Username:"
+                FontSize="18"
+                TextColor="WhiteSmoke"   
+                HorizontalTextAlignment="Start"
+        />
+        <Entry
+                x:Name="userLogin"
+                BackgroundColor="White"   
+                Placeholder=" ..." PlaceholderColor="Black" 
+                WidthRequest="430"
+        />
+        <Label BackgroundColor="DimGrey" WidthRequest="600" HeightRequest="25"/>
+        
+
+        <Label Margin="10"
+                Text="              Password:"
+                FontSize="18"
+                TextColor="WhiteSmoke"   
+                HorizontalTextAlignment="Start"
+        />
+        <Entry
+                x:Name="passLogin"
+                BackgroundColor="White"   
+                Placeholder=" ..." PlaceholderColor="Black" 
+                WidthRequest="430"
+        />
+
+        <Button
+                x:Name="loginButton"
+                BackgroundColor="CornflowerBlue"
+                Text="Login"
+                WidthRequest="100"
+                Clicked="loginButtonClicked"
+                HorizontalOptions="CenterAndExpand"
+            />
+
+    </StackLayout>
+</ContentPage>
