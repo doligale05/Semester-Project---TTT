@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SemesterProject.MainPage">
+
+    <ScrollView>
+        <StackLayout Padding="10 " BackgroundColor="DimGrey" HeightRequest="650" WidthRequest="600">
+
+            <Label BackgroundColor="CornflowerBlue" WidthRequest="600" HeightRequest="5"/>
+            <Label
+                Text="Time-To-Task"
+                FontSize="Header"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                TextColor="CornflowerBlue"
+                FontAttributes="Bold, Italic"
+            />
+            <Label BackgroundColor="CornflowerBlue" WidthRequest="600" HeightRequest="5"/>
+            <Label BackgroundColor="DimGrey" WidthRequest="600" HeightRequest="55"/>
+
+
+            <Label Margin="10"
+                Text="              Create a Username:"
+                FontSize="18"
+                TextColor="WhiteSmoke"   
+                HorizontalTextAlignment="Start"
+            />
+            <Entry
+                x:Name="username"
+                BackgroundColor="White"   
+                Placeholder=" ..." PlaceholderColor="Black" 
+                WidthRequest="430"
+            />
+            <Label BackgroundColor="DimGrey" WidthRequest="600" HeightRequest="50"/>
+            
+            <Label Margin="10"
+                Text="              Create a Password:"
+                FontSize="18"
+                TextColor="WhiteSmoke"   
+                HorizontalTextAlignment="Start"
+            />
+            <Entry
+                x:Name="password"
+                BackgroundColor="White"   
+                Placeholder=" ..." PlaceholderColor="Black" 
+                WidthRequest="430"
+            />
+            <Label BackgroundColor="DimGrey" WidthRequest="600" HeightRequest="50"/>
+
+            <Label Margin="10"
+                Text="              Workplace:"
+                FontSize="18"
+                TextColor="WhiteSmoke"   
+                HorizontalTextAlignment="Start"
+            />
+            <Entry
+                x:Name="workplace"
+                BackgroundColor="White"   
+                Placeholder=" ..." PlaceholderColor="Black" 
+                WidthRequest="430"
+            />
+            <Label BackgroundColor="DimGrey" WidthRequest="600" HeightRequest="10"/>
+
+            <Label Margin="15"
+               x:Name="registerComplete" 
+               Text="You Have Been Registered!" 
+               FontSize="18" 
+               TextColor="IndianRed" 
+               HorizontalTextAlignment="Center" 
+               Opacity="0" 
+            />
+
+            <HorizontalStackLayout WidthRequest="200">
+                <Button 
+                x:Name="register"
+                BackgroundColor="CornflowerBlue"
+                Text="Register"
+                WidthRequest="100"
+                Clicked="registarButton"
+                HorizontalOptions="CenterAndExpand"
+            />
+                <Button
+                x:Name="toLogin"
+                BackgroundColor="CornflowerBlue"
+                Text="To Login"
+                WidthRequest="100"
+                Clicked="toLoginButton"
+                HorizontalOptions="CenterAndExpand"
+            />
+            </HorizontalStackLayout>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
