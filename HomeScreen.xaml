@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SemesterProject.HomeScreen"
+             Title="HomeScreen">
+    <StackLayout Padding="10 " BackgroundColor="DimGrey" HeightRequest="650" WidthRequest="600">
+        <Label BackgroundColor="CornflowerBlue" WidthRequest="600" HeightRequest="5"/>
+        <Label
+                Text="Clock In/Clock Out"
+                FontSize="Header"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                TextColor="CornflowerBlue"
+                FontAttributes="Bold, Italic"
+            />
+        <Label BackgroundColor="CornflowerBlue" WidthRequest="600" HeightRequest="5"/>
+
+        <HorizontalStackLayout> 
+            <Label
+            x:Name="currentTime"
+            FontSize="12"
+            TextColor="WhiteSmoke"
+            HorizontalTextAlignment="Start"
+        />
+            <Label
+            x:Name="currentDate"
+            FontSize="12"
+            TextColor="WhiteSmoke"
+            HorizontalTextAlignment="End"
+        />
+        </HorizontalStackLayout>
+        <Label BackgroundColor="CornflowerBlue" WidthRequest="600" HeightRequest="10"/>
+
+        <Label
+            x:Name="currentUser"
+            FontSize="16"
+            FontAttributes="Bold,Italic"
+            TextColor="Black"
+        />
+    </StackLayout>
+</ContentPage>
