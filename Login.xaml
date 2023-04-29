@@ -34,7 +34,7 @@
                 HorizontalTextAlignment="Start"
         />
         <Entry
-                x:Name="userLogin"
+                x:Name="usernameLogin"
                 BackgroundColor="White"   
                 Placeholder=" ..." PlaceholderColor="Black" 
                 WidthRequest="430"
@@ -49,12 +49,13 @@
                 HorizontalTextAlignment="Start"
         />
         <Entry
-                x:Name="passLogin"
+                x:Name="passwordLogin"
                 BackgroundColor="White"   
                 Placeholder=" ..." PlaceholderColor="Black" 
                 WidthRequest="430"
         />
-
+        <Label BackgroundColor="DimGrey" WidthRequest="600" HeightRequest="25"/>
+        
         <Button
                 x:Name="loginButton"
                 BackgroundColor="CornflowerBlue"

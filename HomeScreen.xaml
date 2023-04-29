@@ -15,27 +15,91 @@
             />
         <Label BackgroundColor="CornflowerBlue" WidthRequest="600" HeightRequest="5"/>
 
-        <HorizontalStackLayout> 
-            <Label
+
+        <Label
             x:Name="currentTime"
             FontSize="12"
             TextColor="WhiteSmoke"
-            HorizontalTextAlignment="Start"
+            HorizontalTextAlignment="Center"
         />
-            <Label
-            x:Name="currentDate"
-            FontSize="12"
-            TextColor="WhiteSmoke"
-            HorizontalTextAlignment="End"
-        />
-        </HorizontalStackLayout>
-        <Label BackgroundColor="CornflowerBlue" WidthRequest="600" HeightRequest="10"/>
 
-        <Label
+        <Label BackgroundColor="CornflowerBlue" WidthRequest="600" HeightRequest="5"/>
+        <Label BackgroundColor="DimGrey" WidthRequest="600" HeightRequest="10"/>
+        
+        
+        <Label HorizontalTextAlignment="Center"
             x:Name="currentUser"
             FontSize="16"
             FontAttributes="Bold,Italic"
             TextColor="Black"
         />
+        <Label BackgroundColor="DimGrey" WidthRequest="600" HeightRequest="10"/>
+
+        <Label Margin="10"
+                Text="         Shift Position:"
+                FontSize="18"
+                TextColor="WhiteSmoke"   
+                HorizontalTextAlignment="Start"
+        />
+        <Entry
+                x:Name="shiftPosition"
+                BackgroundColor="White"   
+                Placeholder=" ..." PlaceholderColor="Black" 
+                WidthRequest="475"
+        />
+
+        <Label BackgroundColor="DimGrey" WidthRequest="600" HeightRequest="5"/>
+        <Label
+            x:Name="ifEmpty"
+            Text="Select a Position for your Shift!" 
+               FontSize="12" 
+               TextColor="IndianRed" 
+               HorizontalTextAlignment="Center" 
+               Opacity="0" 
+         />
+
+        <Label BackgroundColor="DimGrey" WidthRequest="600" HeightRequest="10"/>
+        <Label
+            x:Name="workTime"
+            BackgroundColor="WhiteSmoke"
+            WidthRequest="475"
+            HeightRequest="150"   
+            Padding="10"
+            Text="N/A"  
+            TextColor="Black"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Start"
+         />
+        <Label
+            x:Name="workTime2"
+            BackgroundColor="WhiteSmoke"
+            WidthRequest="475"
+            HeightRequest="150"   
+            Padding="10"
+            Text="N/A"
+            TextColor="Black"
+            
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Start"
+         />        
+        <Label BackgroundColor="DimGrey" WidthRequest="600" HeightRequest="20"/>
+            
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Button
+                x:Name="clockIn"
+                WidthRequest="200"
+                Text="Clock - In"
+                Clicked="clockInButton"
+            />
+            
+            <Button
+                x:Name="clockOut"
+                WidthRequest="200"
+                Text="Clock - Out"
+                Clicked="clockOutButton"
+            />
+            
+            
+        </HorizontalStackLayout>
     </StackLayout>
 </ContentPage>
