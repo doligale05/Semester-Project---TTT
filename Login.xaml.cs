@@ -30,6 +30,24 @@ public partial class Login : ContentPage
         workplaceLine = workplaceFile.ReadLine();
 
 
+        if(loginButtonClicked.IsPressed && usernameLogin.Text == ""
+            || loginButtonClicked.IsPressed && passwordLogin.Text == "")
+        {
+            loginError.Text = "Please Fill Out All Entries!"; 
+            loginError.Opacity = 1; 
+        }
+        else
+        { loginError.Opacity = 0; }
+
+        if (loginButtonClicked.IsPressed && usernameLogin.Text != usernameLine
+            || loginButtonClicked.IsPressed && passwordLogin.Text != passwordLine)
+        {
+            loginError.Text = "This User Does Not Exist!";
+            loginError.Opacity = 1;
+        }
+        else { loginError.Opacity = 0; }
+
+
         if ((usernameLine == usernameLogin.Text) && (passwordLine == passwordLogin.Text) && (loginButton.IsPressed)) 
 		{
             Navigation.PushAsync(new HomeScreen(usernameLogin.Text, passwordLogin.Text, workplaceLine));

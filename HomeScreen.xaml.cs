@@ -25,7 +25,17 @@ public partial class HomeScreen : ContentPage
         currentUser.Text = "Welcome to, " + workplaceLine + " " + usernameLine; 
     }
 
+    private void backToLoginButton(object sender, EventArgs e)
+    {
+        Button backToLoginButton = (Button)sender;
+        string backToLoginButtonText = backToLoginButton.Text;
 
+        if (backToLoginButton.IsPressed)
+        {
+            Navigation.PushAsync(new Login());
+        }
+
+    }
    
 
     private void clockInButton(object sender, EventArgs e)
@@ -56,7 +66,7 @@ public partial class HomeScreen : ContentPage
         {
             ifEmpty.Opacity = 1;
         }
-        if(clockOutButton.IsPressed && shiftPosition.Text != null)
+        if(clockOutButton.IsPressed && shiftPosition.Text != null && workTime != null)
         {
             ifEmpty.Opacity = 0;
             workTime2.Text = workTime.Text + " - " + DateTime.Now.ToString("G");

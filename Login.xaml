@@ -63,7 +63,18 @@
                 WidthRequest="100"
                 Clicked="loginButtonClicked"
                 HorizontalOptions="CenterAndExpand"
-            />
+        />
+
+        <Label BackgroundColor="DimGrey" WidthRequest="600" HeightRequest="25"/>
+
+        <Label
+            x:Name="loginError"
+            Text="This User Does Not Exist!"
+            TextColor="IndianRed"
+            HorizontalTextAlignment="Center"
+            Opacity="0"
+            
+        />
 
     </StackLayout>
 </ContentPage>

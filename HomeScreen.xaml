@@ -5,15 +5,31 @@
              Title="HomeScreen">
     <StackLayout Padding="10 " BackgroundColor="DimGrey" HeightRequest="650" WidthRequest="600">
         <Label BackgroundColor="CornflowerBlue" WidthRequest="600" HeightRequest="5"/>
-        <Label
-                Text="Clock In/Clock Out"
+
+        <HorizontalStackLayout >
+            <Button
+                x:Name="backToLogin" 
+                Text="Back"
+                HorizontalOptions="Start"
+                WidthRequest="65"
+                HeightRequest="25"
+                BackgroundColor="DimGrey"
+                BorderColor="CornflowerBlue"
+                BorderWidth="2"
+                Clicked="backToLoginButton"
+            />
+
+            <Label
+                Text="  Clock In/Clock Out"
                 FontSize="Header"
                 HorizontalTextAlignment="Center"
                 VerticalTextAlignment="Center"
                 TextColor="CornflowerBlue"
                 FontAttributes="Bold, Italic"
             />
-        <Label BackgroundColor="CornflowerBlue" WidthRequest="600" HeightRequest="5"/>
+            </HorizontalStackLayout>
+        
+            <Label BackgroundColor="CornflowerBlue" WidthRequest="600" HeightRequest="5"/>
 
 
         <Label
