@@ -27,7 +27,21 @@
                 TextColor="CornflowerBlue"
                 FontAttributes="Bold, Italic"
             />
-            </HorizontalStackLayout>
+            <Label BackgroundColor="DimGrey" WidthRequest="20" HeightRequest="5"/>
+            
+            <Button
+                x:Name="exit" 
+                Text="Exit"
+                HorizontalOptions="End"
+                WidthRequest="65"
+                HeightRequest="25"
+                BackgroundColor="DimGrey"
+                BorderColor="CornflowerBlue"
+                BorderWidth="2"
+                Clicked="exitButton"
+            />
+
+        </HorizontalStackLayout>
         
             <Label BackgroundColor="CornflowerBlue" WidthRequest="600" HeightRequest="5"/>
 

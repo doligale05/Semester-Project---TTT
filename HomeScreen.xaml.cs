@@ -36,7 +36,20 @@ public partial class HomeScreen : ContentPage
         }
 
     }
-   
+
+    private void exitButton(object sender, EventArgs e)
+    {
+        int exitCode = 0; 
+        Button exitButton = (Button)sender;
+        string exitButtonText = exitButton.Text;
+
+        if (exitButton.IsPressed)
+        {
+            Environment.Exit(exitCode);
+        }
+
+    }
+
 
     private void clockInButton(object sender, EventArgs e)
     {
